@@ -12,6 +12,20 @@ Ini adalah panduan untuk persiapan alat dan bahan yang diperlukan sebelum menggu
 - Kabel jumper
 
 ## Persiapan Perangkat Keras
+tabel koneksi pin ke arduinonya:
+
+| Komponen             | Pin Arduino Uno R3 | Pin LCD 16x2 | Pin Sensor Suhu LM35 |
+|----------------------|--------------------|--------------|----------------------|
+| RS (Register Select) | 12                 | 4            | -                    |
+| Enable               | 11                 | 6            | -                    |
+| D4                   | 5                  | 11           | -                    |
+| D5                   | 4                  | 12           | -                    |
+| D6                   | 3                  | 13           | -                    |
+| D7                   | 2                  | 14           | -                    |
+| VO (Contrast)        | -                  | 3            | -                    |
+| GND                  | GND                | 1            | GND                  |
+| VCC                  | 5V                 | 2            | VCC (5V)             |
+| OUT (Analog Input)   | A0                 | -            | OUT                  |
 1. Hubungkan pin LCD ke pin Arduino Uno R3 menggunakan kabel jumper:
    - RS pin LCD ke pin 12 Arduino
    - Enable pin LCD ke pin 11 Arduino
