@@ -43,7 +43,24 @@ tabel koneksi pin ke arduinonya:
    - Terminal kanan potensiometer ke pin 5V Arduino
 4. Pasang LCD dan sensor suhu pada breadboard.
 5. Hubungkan Arduino Uno R3 ke sumber daya (komputer atau adaptor) menggunakan kabel USB.
+## Code
+Berikut adalah library yang digunakan dalam proyek ini beserta link unduhnya:
 
+1. Library LiquidCrystal untuk mengontrol LCD 16x2:
+   - Nama library: LiquidCrystal
+   - Link unduh: [LiquidCrystal Library](https://www.arduino.cc/en/Reference/LiquidCrystal)
+   - Cara menginstal: Buka Arduino IDE, lalu pilih menu "Sketch" -> "Include Library" -> "Manage Libraries". Cari "LiquidCrystal" dan klik "Install".
+
+2. Library OneWire dan DallasTemperature untuk sensor suhu DS18B20:
+   - Nama library: OneWire
+   - Link unduh: [OneWire Library](https://www.pjrc.com/teensy/td_libs_OneWire.html)
+   - Cara menginstal: Unduh library dari link di atas, lalu ekstrak ke dalam folder "libraries" di direktori instalasi Arduino IDE.
+
+   - Nama library: DallasTemperature
+   - Link unduh: [DallasTemperature Library](https://www.pjrc.com/teensy/td_libs_DallasTemperature.html)
+   - Cara menginstal: Unduh library dari link di atas, lalu ekstrak ke dalam folder "libraries" di direktori instalasi Arduino IDE.
+
+Pastikan untuk menginstal library yang diperlukan sebelum mengunggah kode ke Arduino Uno R3. Ikuti langkah-langkah yang disebutkan untuk menginstal library LiquidCrystal dan library OneWire beserta DallasTemperature. Dengan menginstal library-library ini, Anda akan memiliki akses ke fungsi dan fitur yang diperlukan dalam proyek ini.
 ## Persiapan Perangkat Lunak
 1. Pasang Arduino IDE pada komputer Anda (versi terbaru dapat diunduh dari [situs resmi Arduino](https://www.arduino.cc/en/software)).
 2. Buka Arduino IDE dan buka file proyek yang berisi kode untuk membaca suhu menggunakan sensor LM35.
